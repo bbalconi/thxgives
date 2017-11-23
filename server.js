@@ -48,7 +48,7 @@ if (process.env.NODE_ENV === 'production') {
 
 app.post('/socketUrl', (req, res)=>{
   if (process.env.PORT){
-    res.json('https://coffee-pot-pi.herokuapp.com:');
+    res.json('https://thxgives.herokuapp.com:');
   } else {
     res.json('http://localhost:5000')
   }
