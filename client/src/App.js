@@ -12,6 +12,7 @@ class App extends Component {
     this.nameChange = this.nameChange.bind(this)
     this.thanksChange = this.thanksChange.bind(this)
     this.handleClick = this.handleClick.bind(this)
+    this._handleKeyPress = this._handleKeyPress.bind(this)
     this.state = {
       name: '',
       thanks: '',
@@ -32,7 +33,7 @@ class App extends Component {
 
   _handleKeyPress(e) {
     if (e.key === "Enter") {
-      this.handleClick();
+      this.handleClick(this.state.name, this.state.thanks);
     }
   }
 
@@ -57,10 +58,11 @@ class App extends Component {
 }
 
   render() {
+    console.log(this.state) 
     return (
       <div className='bg'>
-         <Input placeholder='Enter your name...' className='lol' onChange={this.nameChange}/>
-         <Input placeholder="Enter what you're thankful for..." onChange={this.thanksChange}/>
+         <Input placeholder='Enter your name...' className='lol' value={this.state.name} onChange={this.nameChange}/>
+         <Input placeholder="Enter what you're thankful for..." value={this.state.thanks} onKeyPress={this._handleKeyPress} onChange={this.thanksChange}/>
          <Button className='thisbutton' color="warning" onClick={this.handleClick}>Give Thanks!</Button>
       </div>
     );
