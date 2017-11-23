@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.bg{
+  position: fixed;
+  background: url('./thankful.jpeg'); 
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  background-size: 80%;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  margin: 0px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.lol{
+  margin-top: 30%;
+}
+
+.form-control{
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.thisbutton{
+  margin-left: 45%;
+}
