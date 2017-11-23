@@ -9,6 +9,8 @@ var cookieParser = require('cookie-parser');
 var path  = require('path');
 // var fs = require('fs');
 
+require('dotenv').config();
+
 
  
 var allowedOrigins = "http://localhost:* http://192.168.*.*:* https://thxgives.herokuapp.com:*";
