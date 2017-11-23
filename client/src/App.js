@@ -30,11 +30,21 @@ class App extends Component {
     })
   }
 
+  _handleKeyPress(e) {
+    if (e.key === "Enter") {
+      this.handleClick();
+    }
+  }
+
   handleClick(){
     this.socket.emit('/messageSend', {
       name: this.state.name,
       thanks: this.state.thanks
   })
+    this.setState({
+      name: '',
+      thanks: ''
+    })
 }
 
   componentDidMount(){
