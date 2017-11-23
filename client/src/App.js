@@ -49,7 +49,7 @@ class App extends Component {
       <div className='bg'>
          <Input placeholder='Enter your name...' className='lol' onChange={this.nameChange}/>
          <Input placeholder="Enter what you're thankful for..." onChange={this.thanksChange}/>
-         <Button className='thisbutton' color="secondary" onClick={this.handleClick}>Give Thanks!</Button>
+         <Button className='thisbutton' color="warning" onClick={this.handleClick}>Give Thanks!</Button>
       </div>
     );
   }

@@ -11,7 +11,7 @@ var path  = require('path');
 
 
  
-var allowedOrigins = "http://localhost:* http://192.168.*.*:* https://coffee-pot-pi.herokuapp.com:*";
+var allowedOrigins = "http://localhost:* http://192.168.*.*:* https://thxgives.herokuapp.com:*";
 var ioServer = io(server, {
   origins: allowedOrigins
 });
