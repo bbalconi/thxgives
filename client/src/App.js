@@ -31,8 +31,11 @@ class App extends Component {
   }
 
   handleClick(){
-
-  }
+    this.socket.emit('/messageSend', {
+      name: this.state.name,
+      thanks: this.state.thanks
+  })
+}
 
   componentDidMount(){
     axios.post('/socketUrl').then((res) => {
