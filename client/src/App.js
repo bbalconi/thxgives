@@ -47,7 +47,6 @@ class App extends Component {
 }
 
   render() {
-    console.log(this.state)
     return (
       <div className='bg'>
          <Input placeholder='Enter your name...' className='lol' onChange={this.nameChange}/>
