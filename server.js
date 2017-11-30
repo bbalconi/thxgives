@@ -42,7 +42,7 @@ if (process.env.NODE_ENV === 'production') {
     client.on('/messageSend', (data) => {
       console.log(data)
       let thanks = data.thanks;
-      ioServer.emit('messageToPi', name, thanks)
+      ioServer.emit('messageToPi', thanks)
     })
 
     client.on('disconnect', ()=>{console.log("client disconnected")});
