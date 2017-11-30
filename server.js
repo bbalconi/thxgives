@@ -41,7 +41,6 @@ if (process.env.NODE_ENV === 'production') {
 
     client.on('/messageSend', (data) => {
       console.log(data)
-      let name = data.name;
       let thanks = data.thanks;
       ioServer.emit('messageToPi', name, thanks)
     })
